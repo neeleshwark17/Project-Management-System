@@ -1,0 +1,159 @@
+.Todo {
+  display: flex;
+  /* margin: 0 -3rem 4px;
+  padding: 1.1rem 3rem; */
+  margin-top: 12px;
+  height: 70px;
+  width: 325px;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(240, 240, 240);
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+
+  transition: opacity 500ms ease-in-out;
+}
+.Todo:hover{
+ 
+
+box-shadow: 1px 1px 5px 5px rgb(100 100 100 / 10%);
+
+}
+.Todo-task {
+  position: relative;
+  transition: opacity 0.4s linear;
+  margin-bottom: 40px;
+  padding: 0 30px
+}
+.Todo.completed {
+  transition: opacity 300ms ease-in-out;
+  transition-delay: 200ms;
+  opacity: 0.5;
+}
+.cardsFancy {
+  display: flex;
+}
+.Todo.completed .Todo-task {
+  /* opacity: 0.6; */
+}
+.Todo.completed .Todo-task:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -0.5rem;
+  display: block;
+  width: 0%;
+  height: 4px;
+  background: #fff;
+  animation: strikeitem 0.3s ease-in 0s forwards;
+}
+
+@keyframes strikeitem {
+  to {
+    width: calc(100% + 1rem);
+  }
+}
+
+.Todo-buttons {
+  flex-shrink: 0;
+  padding-left: 0.7em;
+  margin-left: auto;
+}
+
+.Todo-buttons button {
+  border: none;
+  font-size: 1em;
+  margin: 0.4em;
+  background: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+button {
+  border: none;
+float: right;
+  background: none;
+
+  cursor: pointer;
+  color: rgb(61, 61, 61);
+}
+
+.Todo-edit-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Todo-edit-form label {
+  min-width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+.Todo-edit-form input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  background: #f9f9f9;
+  padding: 0 0.2em;
+  font-size: initial;
+  width: 13rem;
+  border-radius: 5px;
+  margin-left: 0.8rem;
+  padding: 20px;
+
+}
+
+
+.Todo-edit-form input:focus{
+
+  background-color: rgba(172, 255, 47, 0.164);
+  border: 1px solid rgba(0, 128, 0, 0.253);
+
+}
+.Todo-edit-form button {
+  padding: 0 0.5rem;
+  border: none;
+  background: #2495ff;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-left: 5px;
+  cursor: pointer;
+  margin-top: 0.7rem;
+
+  border-radius: 20px;
+  transition: background 0.2s ease-out;
+}
+.Todo-edit-form button:hover {
+  background: #2495ff;
+}
+.Todo-edit-form input,
+.Todo-edit-form button {
+  font-family: "Quicksand", sans-serif;
+  height: 1rem;
+}
+
+.fa-edit, .fa-trash-alt  {
+  color: rgb(63, 62, 62);
+  font-size: 15px;
+  margin-right: 10px;
+}
+.fa-edit:hover{
+  color: rgb(0, 153, 255);
+font-size: 25px;
+
+} 
+
+.fa-trash-alt:hover  {
+  color: rgb(136, 255, 0);
+font-size: 25px;
+  
+}
+
+
+.buttonss {
+  margin-right: 12px;
+display: flex;
+justify-content: space-evenly;
+}

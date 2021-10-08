@@ -1,0 +1,19 @@
+body {
+  /* background-color: gainsboro; */
+}
+
+#listCatalog {
+  transition: transform 300ms ease-in-out;
+}
+/* 
+#listCatalog:hover {
+  transform: scale(1.02);
+} */
+
+
+#ctx {
+  background-color: gray;
+  position: "absolute";
+  z-index: "10";
+  right: 0%;
+}
